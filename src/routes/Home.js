@@ -45,9 +45,6 @@ export default class ViewComponent extends Component {
     if ( this.state.isStarted && this.state.isPaused ) {
       Alert.alert('Please stop timer first');
     }
-    if ( Platform.OS === 'ios') {
-      prompt = AlertIOS.prompt;
-    }
 
     prompt(
       'Enter new name',
@@ -64,7 +61,6 @@ export default class ViewComponent extends Component {
         }
       }],
       {
-          type: 'default',
           cancelable: true,
           defaultValue: '',
           placeholder: this.state.timerName
@@ -76,9 +72,6 @@ export default class ViewComponent extends Component {
 
     if ( this.state.isStarted && this.state.isPaused ) {
       Alert.alert('Please stop timer first');
-    }
-    if ( Platform.OS === 'ios') {
-      prompt = AlertIOS.prompt;
     }
 
     prompt(
@@ -99,7 +92,6 @@ export default class ViewComponent extends Component {
         }
       }],
       {
-          type: 'default',
           cancelable: true,
           defaultValue: `${this.state.interval}`,
           placeholder: `${this.state.timerInterval}`
