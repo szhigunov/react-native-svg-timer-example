@@ -55,7 +55,6 @@ class App extends Component {
       Actions.pop();
       return true;
     } catch (err) {
-      alert("back")
       this.backBtnCounter();
       return true;
     }

@@ -7,6 +7,7 @@ const styles = {
   },
   mainView: { flex: 1, backgroundColor: 'transparent' },
   clockView: { width: 250, height: 250, backgroundColor: 'transparent' },
+  titleView: { padding: 20 },
   titleText: { color: '#fff', fontSize: 36, textAlign: 'center', fontWeight: '800'},
   btnContainerView: { width: 200, height: 110, padding: 10, backgroundColor: 'rgba(0,0,0,0.25)' },
   btnVerticalContainerView: { justifyContent: 'space-between', flexDirection: 'column'},

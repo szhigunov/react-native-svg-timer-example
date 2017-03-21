@@ -1,15 +1,21 @@
 import React, { Component } from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
 import {branch} from 'baobab-react/higher-order';
+import styles from '../styles/Result.js';
+
 
 class ViewComponent extends Component {
+  static propTypes = {
+    min: React.PropTypes.string,
+    sec: React.PropTypes.string,
+  }
 
   render () {
     return (
-    <View style={{ flex: 1, backgroundColor: 'transparent'}}>
+    <View style={styles.mainContainerView}>
       <View style={styles.centeredView}>
-        <View style={{ backgroundColor: 'transparent'}}>
-          <Text style={{ color: '#fff', textAlign: 'center', fontSize: 64, fontWeight: '800'}}>
+        <View style={styles.transparentBgView}>
+          <Text style={styles.timeContainerView}>
             {this.props.min}:{this.props.sec}
           </Text>
         </View>
@@ -18,13 +24,4 @@ class ViewComponent extends Component {
   }
 }
 
-export default branch({ min: 'min', sec: 'sec'}, ViewComponent)
-
-const styles = StyleSheet.create({
-  centeredView: {
-    flex: 1,
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center'
-  }
-});
+export default branch({ min: 'min', sec: 'sec'}, ViewComponent);
