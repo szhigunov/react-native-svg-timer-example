@@ -23,7 +23,7 @@ export default class ViewComponent extends Component {
       isPaused: false,
       interval: null,
       reset: false,
-      timerInterval: 5,
+      timerInterval: 600,
       timerName: 'Timer'
     };
 
