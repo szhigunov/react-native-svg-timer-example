@@ -1,0 +1,29 @@
+{
+  "name": "rntimerciklum",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "baobab": "^2.4.3",
+    "react": "15.4.2",
+    "react-native": "0.42.3",
+    "react-native-background-timer": "^1.0.0",
+    "react-native-drawer": "^2.3.0",
+    "react-native-prompt-android": "0.0.5",
+    "react-native-router-flux": "^3.38.0",
+    "react-native-svg": "^5.1.5"
+  },
+  "devDependencies": {
+    "babel-jest": "19.0.0",
+    "babel-preset-react-native": "1.9.1",
+    "eslint": "^3.18.0",
+    "jest": "19.0.2",
+    "react-test-renderer": "15.4.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
